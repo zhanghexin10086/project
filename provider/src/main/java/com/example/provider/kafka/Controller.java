@@ -105,6 +105,7 @@ public class Controller {
             log.info("answer=====" + answer);
             result.put("code", HttpStatus.OK.value());
             result.put("email", inputUser.getEmail());
+
             result.put("exist", answer);
             returnResultStr = JSON.toJSONString(result);
             log.info("returnResultStr======>" + returnResultStr);
